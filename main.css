@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    overflow-x:  hidden; /* Todo conteudo na horizontal(x) que ultrapassar o tamanho da tela não será visivel */
+}
+
+.container{
+    max-width: 1024px; /* Largura max da pagina */
+    width: 100%; /* Ocupara toda a largura de 1024px */
+    margin: 0 auto; /* Centralizando o conteudo na horizontal */
+}
+
+header, footer{ /* Cutomizando o cabeçalho */
+background-color: #192a56;
+padding-top: 16px; /* Padding de para cima de 16px */
+color: white;
+}
+
+header{
+    /* Fazendo o menu descer junto com a barra de rolagem */
+    position: sticky; 
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container{ /* Selecionando o filho direto de header pois temos dois containers, porém eu quero selecionar o primeiro após o header */
+    display: flex; /* Jogando o menu hamburguer para direita */
+    justify-content: space-between; /* Colocando o hamburguer do outro lado da pagina */
+    align-items: center; /* Alinhando o hamburguer com o titulo */
+    padding-bottom: 16px; /* Padding para baixo de 16px */
+}
+
+nav{ /* Customizando a lista de links */
+    background-color: #575fcf;
+    padding: 16px 0;
+    display: none; /* Fazendo o menu hamburguer desaparecer */
+}
+
+nav li{ /* estilizando os elementos dentro do menu */
+    list-style: none; /* Eliminando os pontos na frente do li */
+    display: inline; /* Colocando os itens do menu um ao lado do outro */
+    margin-right: 16px; /* Colocando um espaçamento a direita entre os intens do menu */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase; /* Colocando as letras em maiusculo */
+}
+
+nav li a{
+    color: white;
+    text-decoration: none; /* Tirando as linhas em baixo dos links */
+}
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+.menu-hamburguer{
+    width: 32px; /* largura de 32px */
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 2px; /* Altura de 2px do span */
+    width: 100%; /* Largura de 100%, ou seja ocupara todos os 32px do ".menu-hamburguer" */
+    background-color: white;
+    display: block;
+    margin-bottom: 4px; /* fazendo os span se separarem para termos as tres linhas */
+}
+
+.container-flex{
+    display: flex;
+}
+
+#sobre-a-loja img{
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section{
+    padding: 48px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+.lista-veiculos li{
+    list-style: none; /* Removendo os pontos do "li" */
+    max-width: 30%; /* Definindo o tamanho da imagem no anuncio */
+    margin-bottom: 24px;
+}
+
+.lista-veiculos{
+    flex-wrap: wrap; /* Fazendo com que quebre a linha */
+}
+
+.lista-veiculos li img{
+    max-width: 100%; /* impedindo que a imagem fique uma em cima da outra */
+}
+
+.lista-veiculos li h3{
+    margin: 16px 0; /* Aplicando margem (tanto em cima como em baixo) a decrição do veiculo */
+}
+
+.item-central{
+    margin: 0 5%;
+}
+
+button{
+    display: block; /* Colocando o botão a baixo da descrição */
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px; /* Aplicando uma borda arredondada no botão */
+}
+
+.price{
+    margin: 16px 0;
+    display: block; /* colocando o preço do carro a baixo da descrição para que funcione a "margin: 16px 0" */
+
+}
+
+.price del{ /* Aplicando uma cor cinza ao preço sem o desconto */
+    color: #ccc;
+    font-size: 14px;
+}
+
+.form-campo{ /* Trabalhando no campo do formulario */
+    margin-bottom: 16px;
+}
+
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input, 
+.form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea{
+    resize: none; /* Impedindo a opção de aumentar o textarear manualmente */
+    height: 120px;
+}
+
+form{
+    max-width: 360px; /* Limitando o tamanho do formulario */
+}
+
+form button{
+    max-width: 120px;
+}
+
+footer li{
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img{
+    height: 32px;
+}
+
+footer .container{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px; /* Colocando um espçamento em baixo dos itens de rede social */
+}

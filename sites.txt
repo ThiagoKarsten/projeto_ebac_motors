@@ -1,0 +1,10 @@
+Site para criação de carrosel:
+https://kenwheeler.github.io/slick/ 
+
+Site para baixar o Jquery Mask:
+https://igorescobar.github.io/jQuery-Mask-Plugin/ 
+Após baixar dentro do arquivo temos a pasta dist que pegamos o arquivo "jQuery mask min" e colocamos na pasta do nosso projeto
+
+Site para validação de formularios atraves do jQuery:
+https://jqueryvalidation.org 
+Após baixar entramos na pasta dist para pegar o arquivo "jQuery validate min" e colocar na pasta do nosso projeto. Tmabem temos a pasta localization que havera frases para colocarmos na validação, assim copiamos a frase em portugues e enviamos para nossa pasta do projeto

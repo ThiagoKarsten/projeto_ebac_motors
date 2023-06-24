@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Motors</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!-- Importando para o css o carrosel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> <!-- Colocando o theme depois do slick -->
+
+</head>
+<body>
+    <header> <!-- Cabeçalho -->
+        <div class="container">
+            <h1>EBAC Motors</h1>
+            <div class="menu-hamburguer"> <!-- Colocando as tres linhas para abrir o menu -->
+                <span> <!-- span*3 atalho para gerar as tags 3 vezes ou quantas vezes quiser -->
+                </span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+            <nav>
+                <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Em destaque</a>
+                    </li>
+                    <li>
+                        <a href="#">Promoções</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="carrousel-imagens">
+        <img src="images/slide1.png" alt="Imagem do Porche 911 carrera">
+        <img src="images/slide2.png" alt="Imagem do BMW X3">
+        <img src="images/slide3.png" alt="Imagem do Ford GT">
+    </div>
+
+    <section id="sobre-a-loja">
+        <div class="container container-flex">
+            <img src="images/loja.jpg" alt="Imagem loja EBAC motors">
+            <div>
+                <h2>Sobre a EBAC Motors</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dicta distinctio nemo nesciunt impedit temporibus qui ea sint fuga autem culpa maiores inventore officiis, itaque dolorum architecto, amet molestias praesentium!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus cumque saepe, odit inventore ducimus et, sed qui consectetur tempore amet fugiat laudantium doloremque, praesentium eaque placeat. Nam delectus distinctio nisi?</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Em destaque</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="images/carro-bmw.png" alt="Carro BMW">
+                    <h3>Carro BMW</h3>
+                    <p>Cambio automático | 4 portas | Vidros e travas elétricas</p>
+                    <div class="price">
+                        <strong>R$ 75.000,00</strong>
+                    </div> <!-- Usamos Strong para ficar em negrito -->
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="images/fusca.png" alt="Carro fusca">
+                    <h3>Carro Fusca</h3>
+                    <p>Cambio manual | 2 portas | Vidros e travas manuais</p>
+                    <div class="price">
+                        <strong>R$ 20.000,00</strong>
+                    </div> <!-- Usamos Strong para ficar em negrito -->
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="images/moto-bmw.png" alt="Moto">
+                    <h3>Moto BMW</h3>
+                    <p>Cambio manual sequencial | Assento de couro | Partida elétrica </p>
+                    <div class="price">
+                        <strong>R$ 30.000,00</strong>
+                    </div> <!-- Usamos Strong para ficar em negrito -->
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="images/audi.jpg" alt="Carro Audi">
+                    <h3>Carro Audi TT</h3>
+                    <p>Cambio automático de dupla embreagem | 2 portas | Vidros e travas elétricas | Suspensão a ar</p>
+                    <div class="price">
+                        <strong>R$ 120.000,00</strong>
+                    </div> <!-- Usamos Strong para ficar em negrito -->
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="images/mclaren.jpg" alt="Carro mclaren">
+                    <h3>Carro Mclaren</h3>
+                    <p>Cambio automático | 2 portas | Cor exclusiva | Todos os opcionais de fábrica</p>
+                    <div class="price">
+                        <strong>R$ 75.000,00</strong>
+                    </div> <!-- Usamos Strong para ficar em negrito -->
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Promoções</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="images/maserati.jpg" alt="Carro maserati">
+                    <h3>Carro Maserati</h3>
+                    <p>Cambio automático | 2 portas | Vidros e travas elétricas</p>
+                    <div class="price">
+                        <del>R$ 120.000,00</del> <!-- aplicando o efeito de risco sobre o preço -->
+                        <strong>R$ 75.000,00</strong>
+                    </div> <!-- Usamos Strong para ficar em negrito -->
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="images/ferrari-f8-tributo.jpg" alt="Carro ferrari">
+                    <h3>Carro Ferrari f8 tributo</h3>
+                    <p>Cambio automático | 2 portas | Apenas 1000km rodado</p>
+                    <div class="price">
+                        <del>R$ 1.000,000.00</del>
+                        <strong>R$ 900.000,00</strong>
+                    </div> <!-- Usamos Strong para ficar em negrito -->
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="images/lamborghini.jpg" alt="Carro lamborghini">
+                    <h3>Carro Lamborghini</h3>
+                    <p>Cambio automático | 2 portas, vidros e travas elétricas | 640 cavalos de força </p>
+                    <div class="price">
+                        <del>R$ 1.200.000.00</del>
+                        <strong>R$ 1.000.000,00</strong>
+                    </div> <!-- Usamos Strong para ficar em negrito -->
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome"> <!-- Aplicando a propriedade chamada "name" para que o validate funcione-->
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone: </label>
+                    <input type="tel" id="telefone" name="telefone"> <!-- Aplicando a propriedade chamada "name" para que o validate funcione-->
+                </div>
+                <div class="form-campo">
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" id="email" name="email"> <!-- Aplicando a propriedade chamada "name" para que o validate funcione-->
+                </div>
+                <div class="form-campo">
+                    <label for="veiculo-interesse">Veiculo de interesse: </label>
+                    <input type="text" id="veiculo-interesse" name="veiculoInteresse"> <!-- Aplicando a propriedade chamada "name" para que o validate funcione-->
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem: </label>
+                    <textarea id="mensagem" name="mensagem"></textarea> <!-- Aplicando a propriedade chamada "name" para que o validate funcione-->
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Criando o roda pé da pagina -->
+    <footer>
+        <div class="container container-flex">
+            <p>2023 &copy; EBAC Motors - Todos os direitos reservados</p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="icones/facebook.png" alt="facebook icone">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="icones/instagram.png" alt="instagram icone">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="icones/youtube.png" alt="youtube icone">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Importando o jquery do site  slich-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Importando o JS do slich -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script> <!-- Importando o jQuery Mask para utilizar ele no javascript -->
+    <script src="js/jquery.validate.min.js"></script> <!-- Importando a validaçao de formulario "validate.min" -->
+    <script src="js/messages_pt_BR.min.js"></script> <!-- Importando a mensagem em portugues que aparecera em baixo do formulario caso ele seja invalido -->
+    <script src="js/main.js"></script> <!-- Importando o arquivo JavaScript para que ele funcione no html -->
+</body>
+</html>
